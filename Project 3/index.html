@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35931917ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Progress.css">
+    <title>Custom Video Player</title>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <video src="Videos/Baby Shark _ @CoComelon Nursery Rhymes & Kids Songs.mp4" id="video" class="screen" ></video>
+     <!-- Adding custom control for the video player -->
+      <div class="controls">
+        <!-- This is the play buttton -->
+        <button class="btn" id="play">
+            <i class="fa fa-play fa-2x"></i>
+        </button>
+        <!-- This is the stop button -->
+        <buttton class="btn" id="stop">
+            <i class="fa fa-stop fa-2x"></i>
+        </buttton>
+       <!-- This is the progress bar -->
+        <input type="range"  id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+        <!-- This is the time duration-->
+         <span class="timestamp" id="timestamp">00:00</span>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
