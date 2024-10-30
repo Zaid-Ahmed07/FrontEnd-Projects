@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!--Left Navigation-->
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/thumb/men/76.jpg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Porfolio</a> </li>
+            <li><a href="#">Blog</a> </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+   <!-- Header Section-->
+    <header>
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, odit.</p>
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <!--Main Content -->
+    <div class="container">
+        <h2>How are you</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quibusdam modi neque! Dolores, nam nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, architecto!</p>
+
+        <h2>Learn More</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, voluptatum?</p>
+
+        <h2>Project</h2>
+        <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <li>Project 4</li>
+            <li>Project 5</li>
+        </ul>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore commodi debitis ab, est sint eveniet illo veniam?</p>
+    <!--Modal-->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class = "close-btn" id = "close">
+                <i class = "fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register here</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name ">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" />
+                    </div>
+                    <div>
+                        <label for="email ">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email" />
+                    </div> 
+                    <div>
+                        <label for="pasword">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password" />
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password2" id="password2" placeholder="Confirm Password" />
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
