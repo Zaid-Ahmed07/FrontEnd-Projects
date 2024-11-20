@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <h1>Music Player</h1>
+
+    <!--Container for music player-->
+    <div class="container " id="container">
+        <!--Container for info about the current form-->
+        <div class="info">
+            <!--Placeholder: Name of current song will be added here-->
+            <h4 id="song-title">Baba Black Sheep</h4>
+            <!--Progress bar showing progress of playback for current song-->
+            <div class="progress" id="progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <!--Audio Player-->
+        <audio src="music/Black sheep.mp3" id="audio"></audio>
+        <!---->
+        <div class="album-art">
+            <img src="images/Black sheep.jpg " alt="album-art" id="album-art"/>
+        </div>
+        <!--navigation Button-->
+        <div class="nav">
+            <!--Previus button-->
+            <button id="previous" class="nav-button">
+                <i class="fas fa-backward"></i>
+            </button>
+            <!--Play/Puse Button-->
+            <button id="play" class="nav-btn nav-btn-large">
+                <i class="fas fa-play"></i>
+            </button>
+            <!--Next song Button-->
+            <button id="next" class="nav-button">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
