@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Typing Game</title>
+</head>
+
+<body>
+    <!--Button element for game setting-->
+    <button class="setting-btn" id="settings-btn">
+        <!--Icon for setting button-->
+        <i class="fa-solid fa-screwdriver-wrench fa-2x"></i>
+    </button>
+
+    <div class="settings" id="settings">
+        <!-- Form to set difficulty settings-->
+        <form id="form">
+            <!--Diffculty-->
+            <label for="difficulty">Difficulty</label>
+            <!--Difficulty Settings-->
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- Game Container-->
+    <div class="container">
+        <!--Heading-->
+        <h2>Fast Typing Game</h2>
+        <!--Instruction-->
+        <p>Type this word as fast as you can</p>
+        <!--Word to type-->
+        <h1 id="word"></h1>
+        <!--Input for user to type the displayed word-->
+        <input type="text" id="user-word" placeholder="Please type here" autocomplete="off" />
+
+        <!--Timer Container-->
+        <p class="timer">
+            Time Remaning: <span id="time">60s</span>
+        </p>
+
+        <!--Score Container-->
+        <p class="scorecard">
+            Score: <span id="score">0</span>
+        </p>
+    </div>
+
+    <!--End of Game Container-->
+    <div class="gameover" id="gameover"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
