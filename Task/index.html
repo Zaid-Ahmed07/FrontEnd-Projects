@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find and Replace Text</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find and Replace Text</h1>
+    <textarea id="inputText" placeholder="Please write something"></textarea>
+    <div class="controls">
+      <input type="text" id="wordToReplace" placeholder="Word to be replaced">
+      <input type="text" id="newWord" placeholder="Add a new word">
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" id="caseSensitive"> Case Sensitive
+      </label>
+    </div>
+    <div class="buttons">
+      <button onclick="replaceWord()">REPLACE</button>
+      <button onclick="replaceAllWords()">REPLACE ALL</button>
+    </div>
+    <p id="occurrences">Occurrences: 0</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
